@@ -1,6 +1,6 @@
-## React Simple Countdown
+## React Countdown by Dom
 
-Simple countdown component for React.
+A Simple countdown component for React.
 
 // TODO
 
