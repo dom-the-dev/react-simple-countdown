@@ -11,6 +11,12 @@
       "@babel/preset-react"
     ]
   },
+  "main": "dist/Countdown.js",
+  "module": "dist/Countdown.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -24,7 +30,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish:npm": "rm -rf dist && mkdir dist &&  babel src/components -d dist --copy-files"
+    "publish:npm": "rm -rf dist && mkdir dist && babel ./src/components -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": "react-app"

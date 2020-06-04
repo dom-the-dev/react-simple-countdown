@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
+import './Countdown.css';
 
 const Countdown = props => {
     const [days, setDays] = useState(0);
@@ -25,24 +26,41 @@ const Countdown = props => {
     }
 
     return (
-        <div className={"countDown"}>
-            <span className={"countDown__label countDown__label--days"}>days: </span>
-            <span className={""}>{days}</span>&nbsp;
+        <div className={"dom-countdown"}>
+            <div className="dom-countdown__box">
+                {props.showLabels ?
+                    <div className={"dom-countdown__label dom-countdown__label--days"}>days: </div> : null}
+                <div className={"dom-countdown__number"}>{days}</div>
+            </div>
 
-            <span className={"countDown__label countDown__label--hours"}>hours: </span>
-            <span className={""}>{hours}</span>&nbsp;
+            <div className="dom-countdown__box">
+                {props.showLabels ?
+                    <div className={"dom-countdown__label dom-countdown__label--hours"}>hours: </div> : null}
+                <div className={"dom-countdown__number"}>{hours}</div>
+            </div>
 
-            <span className={"countDown__label countDown__label--minutes"}>minutes: </span>
-            <span className={""}>{minutes}</span>&nbsp;
+            <div className="dom-countdown__box">
+                {props.showLabels ?
+                    <div className={"dom-countdown__label dom-countdown__label--minutes"}>minutes: </div> : null}
+                <div className={"dom-countdown__number"}>{minutes}</div>
+            </div>
 
-            <span className={"countDown__label countDown__label--seconds"}>seconds: </span>
-            <span className={""}>{seconds}</span>&nbsp;
+            <div className="dom-countdown__box">
+                {props.showLabels ?
+                    <div className={"dom-countdown__label dom-countdown__label--seconds"}>seconds: </div> : null}
+                <div className={"dom-countdown__number"}>{seconds}</div>
+            </div>
         </div>
     );
 };
 
 Countdown.propTypes = {
-    date: PropTypes.instanceOf(Date).isRequired
+    date: PropTypes.instanceOf(Date).isRequired,
+    showLabels: PropTypes.bool
+};
+
+Countdown.defaultProps = {
+    showLabels: true
 };
 
 export default Countdown;

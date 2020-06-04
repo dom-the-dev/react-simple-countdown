@@ -1,0 +1,26 @@
+.dom-countdown {
+    font-family: "Arial", sans-serif;
+    background-color: #FFCD0D;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #446584;
+}
+
+.dom-countdown__box {
+    margin: 5px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.dom-countdown__number {
+    font-size: 40px;
+    padding: 10px;
+}
+
+.dom-countdown__label {
+    background-color: #FFA500;
+    padding: 5px;
+    color: #FFFFFF;
+}
