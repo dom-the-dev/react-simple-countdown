@@ -11,7 +11,7 @@ A Simple countdown component for React.
 #### Usage:
 ```javascript
 import React from 'react';
-import Countdown from "./components/Countdown";
+import Countdown from "dom-simple-react-countdown";
 
 function App() {
   return (
