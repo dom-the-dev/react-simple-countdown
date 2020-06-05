@@ -8,6 +8,9 @@ A Simple countdown component for React.
 
 `yarn add dom-simple-react-countdown`
 
+#### Live Demo:
+[Live Demo](https://domthedev.com/dom-simple-react-countdown/ "Dom Simple React Countdown")
+
 #### Usage:
 ```javascript
 import React from 'react';
