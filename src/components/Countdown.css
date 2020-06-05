@@ -1,7 +1,5 @@
 .dom-countdown {
     font-family: "Arial", sans-serif;
-    background-color: #FFCD0D;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +18,5 @@
 }
 
 .dom-countdown__label {
-    background-color: #FFA500;
     padding: 5px;
-    color: #FFFFFF;
 }

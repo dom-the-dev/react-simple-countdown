@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/dom-the-dev/react-simple-countdown.git"
   },
-  "version": "0.1.2",
+  "version": "0.1.31",
   "private": false,
   "babel": {
     "presets": [

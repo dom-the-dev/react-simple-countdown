@@ -4,7 +4,7 @@ import Countdown from "./components/Countdown";
 function App() {
   return (
     <div>
-      <Countdown showLabels={false} date={new Date('Jun 05, 2020 09:50')}/>
+      <Countdown date={new Date('Jun 05, 2021 09:50')}/>
     </div>
   );
 }
